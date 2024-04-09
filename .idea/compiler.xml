@@ -2,23 +2,30 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="config-server" />
-        <module name="ms1" />
-        <module name="ms2" />
+        <module name="gateway-server" />
+        <module name="user-accounts" />
         <module name="eureka-server" />
+        <module name="messageGateway" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="userAccounts" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="config-server" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
-      <module name="ms1" options="-parameters" />
-      <module name="ms2" options="-parameters" />
+      <module name="gateway-server" options="-parameters" />
+      <module name="messageGateway" options="-parameters" />
+      <module name="user-accounts" options="-parameters" />
+      <module name="userAccounts" options="-parameters" />
     </option>
   </component>
 </project>
