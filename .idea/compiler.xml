@@ -7,9 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="eurekaserver" />
         <module name="config-server" />
         <module name="gateway-server" />
         <module name="user-accounts" />
+        <module name="configserver" />
         <module name="eureka-server" />
         <module name="messageGateway" />
       </profile>
@@ -21,7 +23,9 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="config-server" options="-parameters" />
+      <module name="configserver" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
+      <module name="eurekaserver" options="-parameters" />
       <module name="gateway-server" options="-parameters" />
       <module name="messageGateway" options="-parameters" />
       <module name="user-accounts" options="-parameters" />
