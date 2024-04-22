@@ -6,11 +6,11 @@
       <list>
         <option value="$PROJECT_DIR$/ms1/pom.xml" />
         <option value="$PROJECT_DIR$/ms2/pom.xml" />
-        <option value="$PROJECT_DIR$/config-server/pom.xml" />
-        <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/messenger/pom.xml" />
         <option value="$PROJECT_DIR$/gateway-server/pom.xml" />
-        <option value="$PROJECT_DIR$/userAccounts/pom.xml" />
-        <option value="$PROJECT_DIR$/messageGateway/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/user/pom.xml" />
       </list>
     </option>
   </component>

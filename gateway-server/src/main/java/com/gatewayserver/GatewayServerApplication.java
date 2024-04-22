@@ -18,14 +18,14 @@ public class GatewayServerApplication {
     @Bean
     public RouteLocator starCarRouteConfig(RouteLocatorBuilder routeLocatorBuilder) {
         return routeLocatorBuilder.routes()
-                .route(p -> p.path("/saraha/useraccounts/**")
-                        .filters(f -> f.rewritePath("/saraha/useraccounts/(?<segment>.*)", "/${segment}")
+                .route(p -> p.path("/saraha/user/**")
+                        .filters(f -> f.rewritePath("/saraha/user/(?<segment>.*)", "/${segment}")
                                 .addResponseHeader("X-Response-Time", LocalDateTime.now().toString()))
-                        .uri("lb://useraccounts"))
-                .route(p -> p.path("/saraha/messageGateway/**")
-                        .filters(f -> f.rewritePath("/saraha/messageGateway/(?<segment>.*)", "/${segment}")
+                        .uri("lb://user"))
+                .route(p -> p.path("/saraha/messenger/**")
+                        .filters(f -> f.rewritePath("/saraha/messenger/(?<segment>.*)", "/${segment}")
                                 .addResponseHeader("X-Response-Time", LocalDateTime.now().toString()))
-                        .uri("lb://messageGateway")).build();
+                        .uri("lb://messenger")).build();
     }
 
 }
